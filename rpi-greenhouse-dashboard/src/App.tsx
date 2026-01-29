@@ -94,8 +94,7 @@ function App() {
                           <div className={"flex flex-row gap-6 items-center"}>
                               <span><Info size={30}/></span>
                               <p className="text-2xl">
-                                  No sensor RPIs connected. Use the button above to
-                                  <span className={"font-bold text-emerald-400"}> add one</span>.
+                                  No sensor RPIs connected.
                               </p>
                           </div>
                       )}
