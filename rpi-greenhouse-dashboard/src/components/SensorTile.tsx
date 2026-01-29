@@ -6,7 +6,7 @@ import {type SensorData} from "../utils/sensorData.ts";
 type SensorTileProps = {
     data: SensorData;
     onClick: () => void;
-    onDelete?: (id: string) => void;
+    onDelete?: (id: number) => void;
 };
 
 function SensorTile({data, onClick, onDelete}: SensorTileProps) {
@@ -108,8 +108,8 @@ function SensorTile({data, onClick, onDelete}: SensorTileProps) {
                                         <span>{currTemperature?.toFixed(2)}°C</span>
                                     </div>
                                    <div className={`flex items-center gap-2 ${comfortText[humLvl!]}`}>
-                                        <Droplet size={25}/>
-                                        <span>{currHumidity?.toFixed(2)} %</span>
+                                    <Droplet size={25}/>
+                                    <span>{currHumidity?.toFixed(2)} %</span>
                                     </div>
                                 </>
                             ) : (
