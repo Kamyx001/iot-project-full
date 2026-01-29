@@ -6,7 +6,7 @@ import {type SensorData} from "../utils/sensorData.ts";
 type SensorTileProps = {
     data: SensorData;
     onClick: () => void;
-    onDelete?: (id: number) => void;
+    onDelete?: (id: string) => void;
 };
 
 function SensorTile({data, onClick, onDelete}: SensorTileProps) {

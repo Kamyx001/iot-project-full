@@ -6,7 +6,7 @@ import {fetchReadings, fetchRpis, deleteRpi} from "./api/rpiApi.ts";
 import SensorTile from "./components/SensorTile.tsx";
 
 function App() {
-    const [selectedRpiId, setSelectedRpiId] = useState<number | null>(null);
+    const [selectedRpiId, setSelectedRpiId] = useState<string | null>(null);
     const [sensors, setSensors] = useState<SensorData[]>([]);
 
     const selectedRpi =
@@ -53,7 +53,7 @@ function App() {
         );
     }
 
-    async function handleDeleteRpi(id: number) {
+    async function handleDeleteRpi(id: string) {
         try {
             await deleteRpi(id);
             setSensors(prev => prev.filter(rpi => rpi.id !== id));
