@@ -1,0 +1,79 @@
+^C^Cpi@raspberrypi:~/IoTProject/WeatherStationProject/host $ python main.py
+2026-01-22 15:12:27,087 INFO communication: MQTT client started (async)
+2026-01-22 15:12:27,095 INFO communication: Connected to broker (10.108.33.128:1883) reason=Success
+2026-01-22 15:12:27,392 INFO communication: MQTT client started (async)
+2026-01-22 15:12:27,394 WARNING communication: Disconnected from broker (rc=MQTTErrorCode.MQTT_ERR_CONN_LOST). Will retry automatically.
+2026-01-22 15:12:27,395 INFO communication: Connected to broker (10.108.33.128:1883) reason=Success
+2026-01-22 15:12:28,398 INFO communication: Connected to broker (10.108.33.128:1883) reason=Success
+2026-01-22 15:12:28,400 WARNING communication: Disconnected from broker (rc=MQTTErrorCode.MQTT_ERR_CONN_LOST). Will retry automatically.
+- draw rectangle
+2026-01-22 15:12:29,403 WARNING communication: Disconnected from broker (rc=MQTTErrorCode.MQTT_ERR_CONN_LOST). Will retry automatically.
+2026-01-22 15:12:29,404 INFO communication: Connected to broker (10.108.33.128:1883) reason=Success
+- draw rectangle
+2026-01-22 15:12:30,444 INFO communication: Connected to broker (10.108.33.128:1883) reason=Success
+2026-01-22 15:12:30,445 WARNING communication: Disconnected from broker (rc=MQTTErrorCode.MQTT_ERR_CONN_LOST). Will retry automatically.
+- draw rectangle
+2026-01-22 15:12:31,486 INFO communication: Connected to broker (10.108.33.128:1883) reason=Success
+2026-01-22 15:12:31,492 WARNING communication: Disconnected from broker (rc=MQTTErrorCode.MQTT_ERR_CONN_LOST). Will retry automatically.
+2026-01-22 15:12:32,501 WARNING communication: Disconnected from broker (rc=MQTTErrorCode.MQTT_ERR_CONN_LOST). Will retry automatically.
+2026-01-22 15:12:32,502 INFO communication: Connected to broker (10.108.33.128:1883) reason=Success
+- draw rectangle
+2026-01-22 15:12:33,504 WARNING communication: Disconnected from broker (rc=MQTTErrorCode.MQTT_ERR_CONN_LOST). Will retry automatically.
+2026-01-22 15:12:33,505 INFO communication: Connected to broker (10.108.33.128:1883) reason=Success
+- draw rectangle
+2026-01-22 15:12:34,507 WARNING communication: Disconnected from broker (rc=MQTTErrorCode.MQTT_ERR_CONN_LOST). Will retry automatically.
+2026-01-22 15:12:34,508 INFO communication: Connected to broker (10.108.33.128:1883) reason=Success
+- draw rectangle
+2026-01-22 15:12:35,552 INFO communication: Connected to broker (10.108.33.128:1883) reason=Success
+2026-01-22 15:12:35,557 WARNING communication: Disconnected from broker (rc=MQTTErrorCode.MQTT_ERR_CONN_LOST). Will retry automatically.
+2026-01-22 15:12:36,593 WARNING communication: Disconnected from broker (rc=MQTTErrorCode.MQTT_ERR_CONN_LOST). Will retry automatically.
+2026-01-22 15:12:36,595 INFO communication: Connected to broker (10.108.33.128:1883) reason=Success
+- draw rectangle
+2026-01-22 15:12:37,597 WARNING communication: Disconnected from broker (rc=MQTTErrorCode.MQTT_ERR_CONN_LOST). Will retry automatically.
+2026-01-22 15:12:37,598 INFO communication: Connected to broker (10.108.33.128:1883) reason=Success
+- draw rectangle
+send called
+connect
+pubishing to weather/hosts/host-01/data: {"id": 1, "cur_temp": 24.3125, "cur_humid": 30.699655925913273, "max_temp": 40.0, "min_temp": 0.0}
+2026-01-22 15:12:38,601 WARNING communication: Disconnected from broker (rc=MQTTErrorCode.MQTT_ERR_CONN_LOST). Will retry automatically.
+2026-01-22 15:12:38,602 INFO communication: Connected to broker (10.108.33.128:1883) reason=Success
+- draw rectangle
+2026-01-22 15:12:39,645 INFO communication: Connected to broker (10.108.33.128:1883) reason=Success
+2026-01-22 15:12:39,661 WARNING communication: Disconnected from broker (rc=MQTTErrorCode.MQTT_ERR_CONN_LOST). Will retry automatically.
+2026-01-22 15:12:40,670 WARNING communication: Disconnected from broker (rc=MQTTErrorCode.MQTT_ERR_CONN_LOST). Will retry automatically.
+2026-01-22 15:12:40,671 INFO communication: Connected to broker (10.108.33.128:1883) reason=Success
+- draw rectangle
+2026-01-22 15:12:41,674 INFO communication: Connected to broker (10.108.33.128:1883) reason=Success
+2026-01-22 15:12:41,676 WARNING communication: Disconnected from broker (rc=MQTTErrorCode.MQTT_ERR_CONN_LOST). Will retry automatically.
+- draw rectangle
+2026-01-22 15:12:42,678 WARNING communication: Disconnected from broker (rc=MQTTErrorCode.MQTT_ERR_CONN_LOST). Will retry automatically.
+2026-01-22 15:12:42,679 INFO communication: Connected to broker (10.108.33.128:1883) reason=Success
+- draw rectangle
+2026-01-22 15:12:43,727 INFO communication: Connected to broker (10.108.33.128:1883) reason=Success
+2026-01-22 15:12:43,760 WARNING communication: Disconnected from broker (rc=MQTTErrorCode.MQTT_ERR_CONN_LOST). Will retry automatically.
+2026-01-22 15:12:44,768 WARNING communication: Disconnected from broker (rc=MQTTErrorCode.MQTT_ERR_CONN_LOST). Will retry automatically.
+2026-01-22 15:12:44,770 INFO communication: Connected to broker (10.108.33.128:1883) reason=Success
+- draw rectangle
+2026-01-22 15:12:45,772 WARNING communication: Disconnected from broker (rc=MQTTErrorCode.MQTT_ERR_CONN_LOST). Will retry automatically.
+2026-01-22 15:12:45,773 INFO communication: Connected to broker (10.108.33.128:1883) reason=Success
+- draw rectangle
+2026-01-22 15:12:46,774 WARNING communication: Disconnected from broker (rc=MQTTErrorCode.MQTT_ERR_CONN_LOST). Will retry automatically.
+2026-01-22 15:12:46,775 INFO communication: Connected to broker (10.108.33.128:1883) reason=Success
+- draw rectangle
+2026-01-22 15:12:47,792 INFO communication: Connected to broker (10.108.33.128:1883) reason=Success
+2026-01-22 15:12:47,799 WARNING communication: Disconnected from broker (rc=MQTTErrorCode.MQTT_ERR_CONN_LOST). Will retry automatically.
+2026-01-22 15:12:48,803 INFO communication: Connected to broker (10.108.33.128:1883) reason=Success
+2026-01-22 15:12:48,804 WARNING communication: Disconnected from broker (rc=MQTTErrorCode.MQTT_ERR_CONN_LOST). Will retry automatically.
+- draw rectangle
+send called
+2026-01-22 15:12:49,423 INFO communication: MQTT not connected; queuing data
+2026-01-22 15:12:49,809 WARNING communication: Disconnected from broker (rc=MQTTErrorCode.MQTT_ERR_CONN_LOST). Will retry automatically.
+2026-01-22 15:12:49,809 INFO communication: Connected to broker (10.108.33.128:1883) reason=Success
+- draw rectangle
+2026-01-22 15:12:50,833 WARNING communication: Disconnected from broker (rc=MQTTErrorCode.MQTT_ERR_CONN_LOST). Will retry automatically.
+2026-01-22 15:12:50,833 INFO communication: Connected to broker (10.108.33.128:1883) reason=Success
+- draw rectangle
+2026-01-22 15:12:51,883 INFO communication: Connected to broker (10.108.33.128:1883) reason=Success
+2026-01-22 15:12:51,883 WARNING communication: Disconnected from broker (rc=MQTTErrorCode.MQTT_ERR_CONN_LOST). Will retry automatically.
+^C2026-01-22 15:12:52,175 WARNING communication: Disconnected from broker (rc=MQTTErrorCode.MQTT_ERR_SUCCESS). Will retry automatically.
+pi@raspberrypi:~/IoTProject/WeatherStationProject/host $ 
