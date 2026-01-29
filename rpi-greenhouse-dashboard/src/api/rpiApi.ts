@@ -19,7 +19,7 @@ export async function addRpi(rpi: Partial<SensorData>) {
     return res.json();
 }
 
-export async function updateRpi(id: string, data: Partial<SensorData>) {
+export async function updateRpi(id: number, data: Partial<SensorData>) {
     const res = await fetch(`${BASE}/rpis/${id}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
@@ -32,7 +32,7 @@ export async function updateRpi(id: string, data: Partial<SensorData>) {
     return res.json();
 }
 
-export async function deleteRpi(id: string) {
+export async function deleteRpi(id: number) {
     const res = await fetch(`${BASE}/rpis/${id}`, {
         method: "DELETE",
     });
@@ -49,7 +49,7 @@ export async function fetchReadings(): Promise<Pick<SensorData, "id" | "currTemp
     return res.json();
 }
 
-export async function fetchRpiHistory(id: string) {
+export async function fetchRpiHistory(id: number) {
     const res = await fetch(`${BASE}/rpis/${id}/history`);
     if (!res.ok) throw new Error("Failed to fetch history");
     return res.json();

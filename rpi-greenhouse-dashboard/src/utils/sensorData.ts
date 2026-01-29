@@ -20,7 +20,7 @@ export type Plant = {
 };
 
 export type SensorData = {
-    id: string;
+    id: number;
     rpiName: string;
 
     plant: Plant | null;
