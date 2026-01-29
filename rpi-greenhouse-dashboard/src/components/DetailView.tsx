@@ -148,7 +148,7 @@ function DetailView({data, onBack, onEdit}: DetailViewProps) {
                                   `text-6xl font-light 
                                   ${tempLvl !== "green" ? comfortTextColor[tempLvl!] : ""}
                                   `}>
-                              {currTemperature}°C
+                              {currTemperature?.toFixed(2)}°C
                               </span>
                               {hasPlant && (
                                   plant.temperature ? (
@@ -170,7 +170,7 @@ function DetailView({data, onBack, onEdit}: DetailViewProps) {
                               <span className={`text-6xl font-light 
                                 ${humLvl !== "green" ? comfortTextColor[humLvl!] : ""}
                                 `}>
-                              {currHumidity}%
+                              {currHumidity?.toFixed(2)}%
                           </span>
                               {hasPlant && (
                                   plant.humidity ? (

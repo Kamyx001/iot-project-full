@@ -105,11 +105,11 @@ function SensorTile({data, onClick, onDelete}: SensorTileProps) {
                                 <>
                                     <div className={`flex items-center gap-2 ${comfortText[tempLvl!]}`}>
                                         <Thermometer size={25}/>
-                                        <span>{currTemperature}°C</span>
+                                        <span>{currTemperature?.toFixed(2)}°C</span>
                                     </div>
                                    <div className={`flex items-center gap-2 ${comfortText[humLvl!]}`}>
                                     <Droplet size={25}/>
-                                    <span>{currHumidity} %</span>
+                                    <span>{currHumidity?.toFixed(2)} %</span>
                                     </div>
                                 </>
                             ) : (
