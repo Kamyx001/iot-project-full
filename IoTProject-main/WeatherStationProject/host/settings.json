@@ -1,6 +1,6 @@
 {
-  "min_temp": -4.46,
-  "max_temp": -0.97,
-  "min_humid": 83.02,
-  "max_humid": 88.27
+  "temp_min": 15,
+  "temp_max": 35,
+  "humid_min": 20,
+  "humid_max": 80
 }

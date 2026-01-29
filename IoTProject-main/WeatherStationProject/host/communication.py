@@ -1,7 +1,6 @@
 import logging
 import time
 import paho.mqtt.client as mqtt
-from paho.mqtt.enums import CallbackAPIVersion
 import paho.mqtt.publish as publish
 import os
 import json
@@ -22,9 +21,9 @@ id_present = False
 def send(message: str):
     try:
         publish.single(topic=TOPIC_DATA, payload=message, hostname=MQTT_BROKER, port=MQTT_PORT)
-        print(f"Sent to {TOPIC_DATA}: {message}")
+        logging.info(f"Sent message to {TOPIC_DATA}: {message}")
     except Exception as e:
-        print(f"Failed to send message: {e}")
+        logging.error(f"Failed to send message: {e}")
 
 def on_message(client, userdata, msg):
     payload = msg.payload.decode()
@@ -68,7 +67,7 @@ def get_id_connect(client, userdata, flags, reason_code, properties=None):
 
 def __init__():
     global id, TOPIC_DATA, TOPIC_CONFIG, id_present
-    client = mqtt.Client(callback_api_version=CallbackAPIVersion.VERSION2)
+    client = mqtt.Client()
     if not id:
         id = "0"
         client.on_message = get_id
