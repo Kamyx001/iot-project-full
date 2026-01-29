@@ -7,6 +7,7 @@ import json
 from dotenv import load_dotenv, set_key
 import tempfile
 import io
+import uuid
 
 load_dotenv()
 
@@ -69,20 +70,7 @@ def __init__():
     global id, TOPIC_DATA, TOPIC_CONFIG, id_present
     client = mqtt.Client()
     if not id:
-        id = "0"
-        client.on_message = get_id
-        client.on_connect = get_id_connect
-        client.reconnect_delay_set(min_delay=1, max_delay=2)
-        client.connect_async(MQTT_BROKER, MQTT_PORT, 60)
-        print(f"{MQTT_BROKER, MQTT_PORT}")
-        client.loop_start()
-        while not id_present:
-            time.sleep(1)
-        
-        time.sleep(2)
-        client.loop_stop()
-        client.disconnect()
-        id = str(int(id) + 1)
+        id = str(uuid.uuid4().int % 100000)
         set_key(".env", "HOST_ID", id)
         publish.single(
             topic=f"host/{id}/config",
